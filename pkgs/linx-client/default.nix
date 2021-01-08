@@ -1,4 +1,4 @@
-{ stdenv, lib, buildGoPackage, fetchFromGitHub }:
+{ stdenv, buildGoPackage, fetchFromGitHub }:
 
 stdenv.mkDerivation buildGoPackage rec {
   pname = "linx-client";
@@ -16,4 +16,11 @@ stdenv.mkDerivation buildGoPackage rec {
   goDeps = ./deps.nix; 
 
   buildFlags = [ "--tags" "release" ];
+
+  meta = with stdenv.lib; {
+    description = "Simple client for linx-server";
+    homepage = "https://github.com/andreimarcu/linx-client";
+    license = licenses.gpl3;
+    platforms = platforms.linux ++ platforms.darwin;
+  };
 }
