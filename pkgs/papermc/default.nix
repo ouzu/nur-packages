@@ -29,7 +29,7 @@ in stdenv.mkDerivation {
   meta = with stdenv.lib; {
     description = "High-performance Minecraft Server";
     homepage    = "https://papermc.io/";
-    license     = licenses.gpl3Only;
+    license     = licenses.gpl3;
     platforms   = platforms.unix;
   };
 }
