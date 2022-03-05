@@ -5,8 +5,8 @@
 ## Packages
 ### my programs
 - [cf-dns-updater](https://github.com/ouzu/cf-dns-updater)
-- [cf-dns-updater](https://github.com/ouzu/polytask)
 - [i3lock-fancy-rapid](https://github.com/ouzu/i3lock-fancy-rapid)
+- [polytask](https://github.com/ouzu/polytask)
 
 ### other programs
 - [hbs](https://github.com/LovesToCode/hbs-How-Big-Search)
