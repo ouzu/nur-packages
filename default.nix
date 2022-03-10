@@ -30,7 +30,7 @@
   hbs = pkgs.callPackage ./pkgs/hbs { };
   linx-client = pkgs.callPackage ./pkgs/linx-client { };
   linx-server = pkgs.callPackage ./pkgs/linx-server {
-    go-rice=pkgs.callPackage ./pkgs/go-rice { };
+    go-rice = pkgs.callPackage ./pkgs/go-rice { };
   };
   papermc = pkgs.callPackage ./pkgs/papermc { };
   ts3exporter = pkgs.callPackage ./pkgs/ts3exporter { };

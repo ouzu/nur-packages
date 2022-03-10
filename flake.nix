@@ -14,6 +14,9 @@
       forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
     in
     {
+      devShell = forAllSystems (system: pkgs.callPackage ./shell.nix {
+        pkgs = import nixpkgs { inherit system; };
+      });
       packages = forAllSystems (system: import ./default.nix {
         pkgs = import nixpkgs { inherit system; };
       });
