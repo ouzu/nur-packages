@@ -12,6 +12,9 @@
         "armv7l-linux"
       ];
       forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f system);
+      pkgs = import nixpkgs {
+        system = "x86_64-linux";
+      };
     in
     {
       devShell = forAllSystems (system: pkgs.callPackage ./shell.nix {
