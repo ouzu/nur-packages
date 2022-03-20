@@ -30,7 +30,6 @@
   catppuccin.gtk = pkgs.callPackage ./pkgs/catppuccin/gtk { };
 
   # other packages
-  glide = pkgs.callPackage ./pkgs/glide { };
   hbs = pkgs.callPackage ./pkgs/hbs { };
   linx-client = pkgs.callPackage ./pkgs/linx-client { };
   linx-server = pkgs.callPackage ./pkgs/linx-server {
