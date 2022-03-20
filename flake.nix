@@ -1,7 +1,8 @@
 {
   description = "My personal NUR repository";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-  outputs = { self, nixpkgs }:
+  inputs.paste.url = "git+ssh://ouzu.tech/paste";
+  outputs = { self, nixpkgs, paste }:
     let
       systems = [
         "x86_64-linux"
@@ -21,7 +22,12 @@
         pkgs = import nixpkgs { inherit system; };
       });
       packages = forAllSystems (system: import ./default.nix {
-        pkgs = import nixpkgs { inherit system; };
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = [
+            paste.overlay.${system}
+          ];
+        };
       });
     };
 }

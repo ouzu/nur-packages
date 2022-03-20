@@ -11,6 +11,10 @@ The list of packages and their versions is also available [here](https://nur.nix
 - [cf-dns-updater](https://github.com/ouzu/cf-dns-updater)
 - [i3lock-fancy-rapid](https://github.com/ouzu/i3lock-fancy-rapid)
 - [polytask](https://github.com/ouzu/polytask)
+- paste
+    - paste-backend
+    - paste-frontend
+    - paste-client
 
 ### Catppucin
 - [catppuccin.cursors](https://github.com/catppuccin/cursors)

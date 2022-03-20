@@ -18,6 +18,9 @@
   cf-dns-updater = pkgs.callPackage ./pkgs/cf-dns-updater { };
   i3lock-fancy-rapid = pkgs.callPackage ./pkgs/i3lock-fancy-rapid { };
   polytask = pkgs.callPackage ./pkgs/polytask { };
+  paste-frontend = pkgs.paste-frontend;
+  paste-backend = pkgs.paste-backend;
+  paste-client = pkgs.paste-client;
 
   # catppuccin
   catppuccin.cursors = pkgs.callPackage ./pkgs/catppuccin/cursors {
