@@ -22,6 +22,7 @@ The list of packages and their versions is also available [here](https://nur.nix
 
 ### Other programs
 - [hbs](https://github.com/LovesToCode/hbs-How-Big-Search)
+- [libewf](https://github.com/libyal/libewf/)
 - [linx-client](https://github.com/andreimarcu/linx-client)
 - [linx-server](https://github.com/andreimarcu/linx-server)
 - [papermc](https://papermc.io/)
